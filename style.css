@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+*img{
+    width: 100%;
+    height: 100%;
+}
+/* ...header... */
+header{
+    padding: 40px 80px 0px;
+    background: #FFF;
+    
+}
+/* ....nav.... */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-menu img{
+    margin-right: 30px;
+}
+   
+.nav-menu a{
+    margin-right: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+     color: #3A3A3A;   
+}
+/* .........head-banner.... */
+.header-banner{
+    display: flex;
+    
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+.header-banner-title{
+margin-right: 2.5rem;
+   width: 700px;
+   
+}
+.header-banner-head{
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+.header-banner p{
+    font-size: 1rem;
+    color: #3A3A3A;
+    font-weight: 600;
+    padding-right: 160px;
+    margin-top: 20px;
+   
+    
+}
+.header-banner button{
+    border-radius: 41px;
+background: #E02C6D;
+color: white;
+
+text-align: center;
+font-size: 1rem;
+font-weight: 500;
+height: 50px;
+width: 250px;
+border: none;
+margin-top: 20px;
+}
+.head-banner-img{
+    width: 500px;
+    height: 460px;
+    margin-top: 50px;
+    
+    
+    padding-top: 40px;
+    
+    background-image: url(images/Circle-design.svg);
+    background-repeat: no-repeat;
+}
+.logo{
+    
+   
+justify-content: center;
+   
+   border: 6px solid chartreuse;
+
+}
+.logo-img{
+   /* background-color: #E02C6D; */
+   /* width: 50%; */
+    margin: 0 auto;
+}
+.logo-img img{
+    margin: 0px 40px;
+}
+/* ...main.... */
+main h1{
+    text-align: center;
+}
+
+/* ....Mobile.... */
+@media screen and (max-width:576px){
+    
+    nav,.header-banner
+    {
+        flex-direction: column;
+       padding: 0px;
+       font-size: 16px;
+    }
+    .header-banner{
+        flex-direction: column-reverse;
+    }
+}
+.products{
+    display: grid;
+    grid-template-columns:repeat(3 -1fr);
+}
+/* ... Tab..... */
+@media  screen and (min-width:576px) and (max-width:913px) {
+    header{
+        /* padding: 10px 5px 0px; */
+    }
+    nav,
+    
+    {
+        flex-direction: column;
+    }
+    .header-banner{
+        display: grid;
+        grid-template-columns: repeat(1  -1fr);
+    }
+}
